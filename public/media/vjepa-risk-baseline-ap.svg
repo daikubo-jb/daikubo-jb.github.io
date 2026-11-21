@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="292" viewBox="0 0 560 292" role="img" aria-labelledby="title desc">
+  <title id="title">Validation frame average precision</title>
+  <desc id="desc">Constant score 0.024011; masked prediction error 0.037674; frozen features plus linear probe 0.144671. Values come from the initial V-JEPA 2 A/B experiment.</desc>
+  <rect width="560" height="292" rx="12" fill="#f4f6f8"/>
+  <g font-family="system-ui, sans-serif" fill="#16243a">
+    <text x="28" y="38" font-size="25" font-weight="700">Validation frame average precision</text>
+    <text x="29" y="76" font-size="20" font-weight="600">Constant score</text>
+    <text x="523" y="76" font-size="20" text-anchor="end">0.024011</text>
+    <rect x="29" y="86" width="494.000" height="17" rx="4" fill="#e1e6ed"/>
+    <rect x="29" y="86" width="74.134" height="17" rx="4" fill="#7c889b"/>
+    <text x="29" y="142" font-size="20" font-weight="600">Masked prediction error</text>
+    <text x="523" y="142" font-size="20" text-anchor="end">0.037674</text>
+    <rect x="29" y="152" width="494.000" height="17" rx="4" fill="#e1e6ed"/>
+    <rect x="29" y="152" width="116.318" height="17" rx="4" fill="#5080a4"/>
+    <text x="29" y="208" font-size="20" font-weight="600">Frozen features + linear probe</text>
+    <text x="523" y="208" font-size="20" text-anchor="end">0.144671</text>
+    <rect x="29" y="218" width="494.000" height="17" rx="4" fill="#e1e6ed"/>
+    <rect x="29" y="218" width="446.672" height="17" rx="4" fill="#176359"/>
+    <path d="M29.000 249 L523.000 249" stroke="#57677d" stroke-width="1" />
+    <path d="M29.000 249 L29.000 255" stroke="#57677d" stroke-width="1" />
+    <text x="29.000" y="276" font-size="17" text-anchor="middle">0.00</text>
+    <path d="M152.500 249 L152.500 255" stroke="#57677d" stroke-width="1" />
+    <text x="152.500" y="276" font-size="17" text-anchor="middle">0.04</text>
+    <path d="M276.000 249 L276.000 255" stroke="#57677d" stroke-width="1" />
+    <text x="276.000" y="276" font-size="17" text-anchor="middle">0.08</text>
+    <path d="M399.500 249 L399.500 255" stroke="#57677d" stroke-width="1" />
+    <text x="399.500" y="276" font-size="17" text-anchor="middle">0.12</text>
+    <path d="M523.000 249 L523.000 255" stroke="#57677d" stroke-width="1" />
+    <text x="523.000" y="276" font-size="17" text-anchor="middle">0.16</text>
+  </g>
+</svg>

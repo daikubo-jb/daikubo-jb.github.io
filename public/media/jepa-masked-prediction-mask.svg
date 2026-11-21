@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="244" viewBox="0 0 680 244" role="img" aria-labelledby="title desc">
+  <title id="title">Selected frames and the central mask</title>
+  <desc id="desc">Eight-by-eight central patches are withheld only in frames 30 through 33; the surrounding image and before and after frames stay visible. The frames are schematic.</desc>
+  <rect x="1" y="1" width="678" height="242" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" fill="#15263b">
+    <text x="28" y="39" font-size="22" font-weight="650">What the context encoder sees</text>
+    <text x="28" y="62" font-size="14">Selected frames · not to scale</text>
+    <g fill="#ebf3fc" stroke="#53708f" stroke-width="1.5">
+      <rect x="29" y="80" width="90" height="90" rx="5"/><rect x="162" y="80" width="90" height="90" rx="5"/><rect x="295" y="80" width="90" height="90" rx="5"/><rect x="428" y="80" width="90" height="90" rx="5"/><rect x="561" y="80" width="90" height="90" rx="5"/>
+    </g>
+    <circle cx="46" cy="125" r="7" fill="#245fa6"/><circle cx="634" cy="125" r="7" fill="#245fa6"/>
+    <g fill="#c6d3e1" stroke="#48617a" stroke-width="1.5" stroke-dasharray="4 3">
+      <rect x="185" y="103" width="44" height="44"/><rect x="318" y="103" width="44" height="44"/><rect x="451" y="103" width="44" height="44"/>
+    </g>
+    <g font-size="14" text-anchor="middle">
+      <text x="74" y="194">Frame 28</text><text x="207" y="194">Frame 30</text><text x="340" y="194">Frame 31</text><text x="473" y="194">Frame 33</text><text x="606" y="194">Frame 35</text>
+    </g>
+    <rect x="29" y="213" width="16" height="12" fill="#c6d3e1" stroke="#48617a" stroke-dasharray="3 2"/>
+    <text x="54" y="224" font-size="13">Withheld center in frames 30–33; surrounding pixels stay visible.</text>
+  </g>
+</svg>

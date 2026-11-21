@@ -1,0 +1,41 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { localPath } from '../../utils/paths';
+
+export async function getStaticPaths() {
+  const reports = await getCollection('reports', ({ data }) => data.kind === 'report');
+  return reports.map(report => ({ params: { id: report.id }, props: { report } }));
+}
+const { report } = Astro.props as { report: CollectionEntry<'reports'> };
+const { Content } = await render(report);
+const { title, description, purpose, source, media } = report.data;
+---
+<Base title={title} description={description}>
+  <article>
+    <h1>{title}</h1>
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">What I wanted to check</h2>
+      <p>{purpose}</p>
+    </section>
+    {media && (
+      <section aria-labelledby="input-video">
+      <h2 id="input-video">{media.heading}</h2>
+      <figure>
+        <video controls playsinline preload="none" poster={localPath(media.poster)} width="640" height="360" aria-label={media.alt} aria-describedby="demo-caption">
+          <source src={localPath(media.video)} type="video/mp4" />
+          If the video does not play, use the still image link below.
+        </video>
+        <figcaption id="demo-caption">
+          <p>{media.caption}</p>
+          <p><a href={localPath(media.poster)}>View still image</a> · <a href={localPath(media.video)}>Open MP4</a> · <a href={media.source}>{media.sourceLabel}</a>{media.license && <> · <a href={localPath(media.license)}>Media license</a></>}</p>
+        </figcaption>
+      </figure>
+      </section>
+    )}
+    <div class="prose"><Content /></div>
+    <p class="source"><a href={source}>Source material</a></p>
+    <p class="back"><a href={localPath()}>Back to all reports</a></p>
+  </article>
+</Base>

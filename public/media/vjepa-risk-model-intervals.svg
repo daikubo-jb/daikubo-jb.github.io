@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="350" viewBox="0 0 560 350" role="img" aria-labelledby="title desc">
+  <title id="title">Differences in validation window average precision</title>
+  <desc id="desc">All four 95% paired intervals cross zero. Wide minus square for V-JEPA 2: −0.040731, interval −0.171811 to 0.008179; for V-JEPA 2.1: 0.009617, interval −0.081012 to 0.063030. V-JEPA 2.1 minus V-JEPA 2 for square: −0.086894, interval −0.253621 to 0.110627; for wide: −0.036546, interval −0.127183 to 0.070667.</desc>
+  <rect width="560" height="350" rx="12" fill="#f4f6f8"/>
+  <g font-family="system-ui, sans-serif" fill="#16243a">
+    <text x="28" y="37" font-size="25" font-weight="700">Differences in window AP</text>
+    <text x="28" y="63" font-size="18" >Point estimate and paired 95% interval</text>
+    <path d="M34.000 105 L34.000 310" stroke="#aebac8" stroke-width="1" stroke-dasharray="0"/>
+    <text x="34.000" y="332" font-size="17" text-anchor="middle">−0.30</text>
+    <path d="M143.333 105 L143.333 310" stroke="#aebac8" stroke-width="1" stroke-dasharray="0"/>
+    <text x="143.333" y="332" font-size="17" text-anchor="middle">−0.20</text>
+    <path d="M252.667 105 L252.667 310" stroke="#aebac8" stroke-width="1" stroke-dasharray="0"/>
+    <text x="252.667" y="332" font-size="17" text-anchor="middle">−0.10</text>
+    <path d="M362.000 105 L362.000 310" stroke="#26384e" stroke-width="1.7" stroke-dasharray="4 5"/>
+    <text x="362.000" y="332" font-size="17" text-anchor="middle">0</text>
+    <path d="M471.333 105 L471.333 310" stroke="#aebac8" stroke-width="1" stroke-dasharray="0"/>
+    <text x="471.333" y="332" font-size="17" text-anchor="middle">+0.10</text>
+    <rect x="20" y="83" width="510.000" height="24" rx="0" fill="#f4f6f8"/>
+    <text x="28" y="103" font-size="19" font-weight="650">V-JEPA 2: wide − square</text>
+    <path d="M174.153 123 L370.942 123" stroke="#496d8e" stroke-width="3" />
+    <path d="M174.153 117 L174.153 129" stroke="#496d8e" stroke-width="2" />
+    <path d="M370.942 117 L370.942 129" stroke="#496d8e" stroke-width="2" />
+    <circle cx="317.467" cy="123" r="6" fill="#176359" stroke="#f4f6f8" stroke-width="1.5"/>
+    <rect x="20" y="141" width="510.000" height="24" rx="0" fill="#f4f6f8"/>
+    <text x="28" y="161" font-size="19" font-weight="650">V-JEPA 2.1: wide − square</text>
+    <path d="M273.427 181 L430.913 181" stroke="#496d8e" stroke-width="3" />
+    <path d="M273.427 175 L273.427 187" stroke="#496d8e" stroke-width="2" />
+    <path d="M430.913 175 L430.913 187" stroke="#496d8e" stroke-width="2" />
+    <circle cx="372.515" cy="181" r="6" fill="#176359" stroke="#f4f6f8" stroke-width="1.5"/>
+    <rect x="20" y="199" width="510.000" height="24" rx="0" fill="#f4f6f8"/>
+    <text x="28" y="219" font-size="19" font-weight="650">Square: V-JEPA 2.1 − V-JEPA 2</text>
+    <path d="M84.708 239 L482.952 239" stroke="#496d8e" stroke-width="3" />
+    <path d="M84.708 233 L84.708 245" stroke="#496d8e" stroke-width="2" />
+    <path d="M482.952 233 L482.952 245" stroke="#496d8e" stroke-width="2" />
+    <circle cx="266.996" cy="239" r="6" fill="#176359" stroke="#f4f6f8" stroke-width="1.5"/>
+    <rect x="20" y="257" width="510.000" height="24" rx="0" fill="#f4f6f8"/>
+    <text x="28" y="277" font-size="19" font-weight="650">Wide: V-JEPA 2.1 − V-JEPA 2</text>
+    <path d="M222.947 297 L439.263 297" stroke="#496d8e" stroke-width="3" />
+    <path d="M222.947 291 L222.947 303" stroke="#496d8e" stroke-width="2" />
+    <path d="M439.263 291 L439.263 303" stroke="#496d8e" stroke-width="2" />
+    <circle cx="322.043" cy="297" r="6" fill="#176359" stroke="#f4f6f8" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import { localPath } from '../utils/paths';
+
+interface Props { pageHeading?: boolean }
+const Heading = Astro.props.pageHeading ? 'h1' : 'h2';
+const entries = (await getCollection('reports', ({ data }) => data.kind === 'report'))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, 'en'));
+---
+<section class="report-index" aria-labelledby="reports-heading" data-report-index>
+  <Heading id="reports-heading">Experiment reports</Heading>
+  <div class="report-search" role="search" aria-label="Experiment reports" hidden>
+    <label for="report-search">Search reports</label>
+    <input id="report-search" type="search" placeholder="Search by title, project, or topic" autocomplete="off" aria-controls="report-list" />
+    <p class="report-status" role="status" aria-live="polite" aria-atomic="true"></p>
+  </div>
+  <ul class="reports" id="report-list">
+    {entries.map(({ id, data }) => (
+      <li data-report data-search={[data.title, data.description, data.project, ...data.tags].join(' ')}>
+        <a class="report-title" href={localPath('reports/' + id + '/')}>{data.title}</a>
+        <p>{data.description}</p>
+        {data.tags.length > 0 && <ul class="report-tags" aria-label="Topics">{data.tags.map(tag => <li>{tag}</li>)}</ul>}
+      </li>
+    ))}
+  </ul>
+  <p class="report-empty" hidden={entries.length > 0}>No reports yet.</p>
+</section>
+
+<script>
+  const normalize = (text: string) => text.normalize('NFKC').toLowerCase();
+  for (const section of document.querySelectorAll<HTMLElement>('[data-report-index]')) {
+    const search = section.querySelector<HTMLElement>('.report-search');
+    const input = section.querySelector<HTMLInputElement>('input[type="search"]');
+    const status = section.querySelector<HTMLElement>('.report-status');
+    const empty = section.querySelector<HTMLElement>('.report-empty');
+    const reports = Array.from(section.querySelectorAll<HTMLElement>('[data-report]'))
+      .map(row => ({ row, text: normalize(row.dataset.search ?? '') }));
+    if (!search || !input || !status || !empty || reports.length === 0) continue;
+    const update = () => {
+      const terms = normalize(input.value).trim().split(/\s+/).filter(Boolean);
+      let count = 0;
+      for (const { row, text } of reports) {
+        const visible = terms.every(term => text.includes(term));
+        row.hidden = !visible;
+        if (visible) count++;
+      }
+      empty.hidden = count > 0;
+      empty.textContent = 'No matching reports. Try a different keyword.';
+      status.textContent = `${count} ${count === 1 ? 'report' : 'reports'}`;
+    };
+    input.addEventListener('input', event => { if (!event.isComposing) update(); });
+    input.addEventListener('compositionend', update);
+    window.addEventListener('pageshow', update);
+    search.hidden = false;
+    update();
+  }
+</script>

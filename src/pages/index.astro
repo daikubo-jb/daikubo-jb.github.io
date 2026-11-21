@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import ReportList from '../components/ReportList.astro';
+import { siteName, githubProfile } from '../utils/site';
+const description = 'I write about technical experiments: what I tried, how I tested it, and what I found.';
+---
+<Base title={siteName} description={description}>
+  <header class="index-title">
+    <h1>{siteName}</h1>
+    <p>{description}</p>
+    <p class="index-profile"><a href={githubProfile}>daikubo-jb on GitHub</a></p>
+    <p><small>I use AI tools such as OpenAI Dot to plan and run most of the experiments on this site.</small></p>
+  </header>
+  <ReportList />
+</Base>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 256" width="720" height="256" role="img" aria-labelledby="title description">
+  <title id="title">Agreement with the dense search results</title>
+  <desc id="description">Of 20 dense-reference top-five slots across four queries, the 1-second stride shared 17 window IDs (85%) and the 2-second stride with refinement shared 16 (80%). Both settings found the target event in all four queries.</desc>
+  <rect width="720" height="256" rx="12" fill="#f8fafc"/>
+  <g fill="#0f172a" font-family="system-ui, sans-serif">
+    <text x="26" y="40" font-size="25" font-weight="700">Agreement with the dense results</text>
+    <text x="26" y="72" font-size="18">Top-five window IDs shared, ignoring rank order</text>
+    <text x="26" y="116" font-size="19" font-weight="600">1 s stride</text>
+    <text x="26" y="172" font-size="19" font-weight="600">2 s + refinement</text>
+    <text x="26" y="226" font-size="17">Both alternatives found the target event for all four queries.</text>
+  </g>
+  <g>
+    <rect x="215" y="92" width="465" height="34" rx="5" fill="#dbe5ee"/>
+    <rect x="215" y="148" width="465" height="34" rx="5" fill="#dbe5ee"/>
+    <rect x="215" y="92" width="395.25" height="34" rx="5" fill="#115985"/>
+    <rect x="215" y="148" width="372" height="34" rx="5" fill="#115985"/>
+  </g>
+  <g fill="#fff" font-family="system-ui, sans-serif" font-size="18" font-weight="600" text-anchor="end">
+    <text x="598" y="115">17 / 20 · 85%</text>
+    <text x="575" y="171">16 / 20 · 80%</text>
+  </g>
+</svg>

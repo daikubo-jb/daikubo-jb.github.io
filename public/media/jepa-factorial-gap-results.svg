@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="270" viewBox="0 0 680 270" role="img" aria-labelledby="title desc">
+  <title id="title">Correct candidate alone in first place</title>
+  <desc id="desc">Out of 16 conditions: V-JEPA 2, 4; two-sided interpolation, 12; visible-wall rule, 14.</desc>
+  <rect x="1" y="1" width="678" height="268" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <g font-family="system-ui, sans-serif" fill="#15263b">
+    <text x="26" y="38" font-size="22" font-weight="650">Correct candidate alone in first place</text>
+    <text x="26" y="60" font-size="14">Recorded counts · 16 conditions</text>
+    <g stroke="#cbd5e1"><path d="M228 75v150m100-150v150m100-150v150m100-150v150m100-150v150"/></g>
+    <g font-size="15"><text x="26" y="103">V-JEPA 2</text><text x="26" y="156">Two-sided interpolation</text><text x="26" y="209">Visible-wall rule</text></g>
+    <rect x="228" y="84" width="100" height="27" rx="3" fill="#2f6092"/>
+    <rect x="228" y="137" width="300" height="27" rx="3" fill="#526b81"/>
+    <rect x="228" y="190" width="350" height="27" rx="3" fill="#526b81"/>
+    <g font-size="15" font-weight="650"><text x="337" y="103">4</text><text x="537" y="156">12</text><text x="587" y="209">14</text></g>
+    <g font-size="13" text-anchor="middle"><text x="228" y="245">0</text><text x="328" y="245">4</text><text x="428" y="245">8</text><text x="528" y="245">12</text><text x="628" y="245">16</text></g>
+  </g>
+</svg>
